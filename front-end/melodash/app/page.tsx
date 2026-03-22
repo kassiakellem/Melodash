@@ -176,9 +176,12 @@ const LoginView = ({ onLogin, userRole, setUserRole }: LoginViewProps) => {
             <div className="w-20 h-20 rounded-3xl bg-gradient-to-tr from-[#23154eef] to-[#A0055D] flex items-center justify-center mx-auto mb-8 shadow-2xl shadow-[#836EF9]/30">
               <Zap className="w-12 h-12 text-white" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 leading-none">
-             ONDE TODO <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#836EF9] to-[#A0055D]">MUNDO GANHA!</span>
+             <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 leading-none">
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#836EF9] to-[#A0055D]">MELODASH</span>
             </h1>
+            <h2 className="text-5xl md:text-5xl font-black tracking-tighter mb-3 leading-none">
+             ONDE TODO <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#836EF9] to-[#A0055D]">MUNDO GANHA!</span>
+            </h2>
             <p className="text-white/60 text-lg mb-10 leading-relaxed max-w-lg mx-auto">
               Ganhe <span className="text-white font-bold">cashback</span> como fã ou <span className="text-white font-bold">royalties paralelos</span> como artista na rede Monad.
             </p>
