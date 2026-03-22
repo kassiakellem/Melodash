@@ -24,11 +24,11 @@ interface UserData {
   [key: string]: any;
 }
 
-// --- CONFIGURAÇÕES E CORES MONAD ---
+// ---CONFIGURAÇÕES E CORES---
 const MONAD_COLORS = {
   bg: '#0C0C0C',
-  primary: '#836EF9',
-  accent: '#A0055D',
+  primary: '#23154eef',
+  accent: '#ca0374ee',
   deepPurple: '#201443',
   glass: 'rgba(255, 255, 255, 0.05)',
   glassBorder: 'rgba(255, 255, 255, 0.1)'
@@ -166,24 +166,24 @@ const LoginView = ({ onLogin, userRole, setUserRole }: LoginViewProps) => {
 
   return (
     <div className="min-h-screen bg-[#0C0C0C] text-white flex flex-col items-center justify-center p-6 relative overflow-hidden font-sans">
-      <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-[#836EF9]/10 rounded-full blur-[150px]" />
+      <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-[#23154eef]/10 rounded-full blur-[150px]" />
       <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-[#A0055D]/10 rounded-full blur-[150px]" />
 
       <div className="max-w-xl w-full relative z-10">
 
         {step === 1 && (
           <div className="text-center animate-in zoom-in duration-500">
-            <div className="w-20 h-20 rounded-3xl bg-gradient-to-tr from-[#836EF9] to-[#A0055D] flex items-center justify-center mx-auto mb-8 shadow-2xl shadow-[#836EF9]/30">
+            <div className="w-20 h-20 rounded-3xl bg-gradient-to-tr from-[#23154eef] to-[#A0055D] flex items-center justify-center mx-auto mb-8 shadow-2xl shadow-[#836EF9]/30">
               <Zap className="w-12 h-12 text-white" />
             </div>
             <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6 leading-none">
-              A MÚSICA QUE <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#836EF9] to-[#A0055D]">PAGA VOCÊ.</span>
+             ONDE TODO <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#836EF9] to-[#A0055D]">MUNDO GANHA!</span>
             </h1>
             <p className="text-white/60 text-lg mb-10 leading-relaxed max-w-lg mx-auto">
               Ganhe <span className="text-white font-bold">cashback</span> como fã ou <span className="text-white font-bold">royalties paralelos</span> como artista na rede Monad.
             </p>
-            <button onClick={() => setStep(2)} className="group flex items-center gap-3 bg-white text-black px-8 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-all">
-              Começar Agora <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+            <button onClick={() => setStep(2)} className="group items-center gap-3 bg-white text-black px-8 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-all">
+              Começar Agora 
             </button>
           </div>
         )}
@@ -214,7 +214,7 @@ const LoginView = ({ onLogin, userRole, setUserRole }: LoginViewProps) => {
               <h2 className="text-2xl font-bold">Escolha seu método</h2>
             </div>
             <div className="space-y-4">
-              <button onClick={() => { if (userRole) onLogin(userRole); }} className="w-full flex items-center justify-center gap-3 bg-[#836EF9] py-5 rounded-2xl font-bold hover:bg-[#725df0] transition-all">
+              <button onClick={() => { if (userRole) onLogin(userRole); }} className="w-full flex items-center justify-center gap-3 bg-[#201443] py-5 rounded-2xl font-bold hover:bg-[#725df0] transition-all">
                 <Wallet className="w-6 h-6" /> Conectar Carteira
               </button>
               <div className="relative py-4"><div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/5" /></div><div className="relative flex justify-center text-[10px] uppercase"><span className="bg-[#0C0C0C] px-4 text-white/30 font-black">ou</span></div></div>
@@ -357,12 +357,12 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0C0C0C] text-white font-sans selection:bg-[#836EF9]/30 pb-32 md:pb-0 md:pl-64 animate-in fade-in duration-1000">
+    <div className="min-h-screen bg-[#0C0C0C] text-white font-sans selection:bg-[#23154eef]/30 pb-32 md:pb-0 md:pl-64 animate-in fade-in duration-1000">
 
       {/* Sidebar - Desktop */}
       <aside className="hidden md:flex fixed left-0 top-0 bottom-0 w-64 bg-[#0C0C0C] border-r border-white/10 flex-col p-8 z-50">
         <div className="flex items-center gap-3 mb-12">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#836EF9] to-[#A0055D] flex items-center justify-center shadow-lg shadow-[#836EF9]/20">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#23154eef] to-[#A0055D] flex items-center justify-center shadow-lg shadow-[#836EF9]/20">
             <Zap className="w-6 h-6 text-white" />
           </div>
           <span className="text-2xl font-black tracking-tighter">MELODASH</span>
@@ -378,7 +378,7 @@ export default function App() {
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
-              className={`w-full flex items-center gap-4 px-5 py-4 rounded-2xl transition-all ${activeTab === item.id ? 'bg-[#836EF9] text-white shadow-xl shadow-[#836EF9]/20' : 'text-white/50 hover:bg-white/5 hover:text-white'}`}
+              className={`w-full flex items-center gap-4 px-5 py-4 rounded-2xl transition-all ${activeTab === item.id ? 'bg-[#23154eef] text-white shadow-xl shadow-[#836EF9]/20' : 'text-white/50 hover:bg-white/5 hover:text-white'}`}
             >
               <item.icon className="w-5 h-5" />
               <span className="font-bold">{item.label}</span>
